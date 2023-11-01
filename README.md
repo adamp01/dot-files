@@ -4,6 +4,7 @@
 3. Install iTerm2 (on macOS)
 4. Set Victor Mono as iTerm font, `Cmd ,` -> Profiles -> Text
 5. Clone this repository in to `~/.config/nvim/`
-6. Run `nvim .`, accept any errors, then `:PackerInstall`, `:PackerSync`.
+6. Run `nvim .`, accept any errors, then `:PackerInstall`, `:PackerSync`
+7. Install prettierd, `brew install fsouza/prettierd/prettierd`
 7. Restart nvim and everything should be working
 
