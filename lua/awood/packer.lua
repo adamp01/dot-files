@@ -106,4 +106,10 @@ return require('packer').startup(function(use)
     use 'nvim-tree/nvim-web-devicons'
     use 'MunifTanjim/prettier.nvim'
     use 'nvimtools/none-ls.nvim'
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
 end)
