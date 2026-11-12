@@ -10,6 +10,7 @@ My terminal and Neovim setup for macOS (Apple Silicon).
 | `zsh/.zprofile` | `~/.zprofile` | Homebrew and pipx on `PATH` |
 | `zsh/aliases.zsh` | `~/.oh-my-zsh/custom/aliases.zsh` | git and make aliases |
 | `git/ignore` | `~/.config/git/ignore` | global gitignore |
+| `ghostty/config` | `~/.config/ghostty/config` | Ghostty terminal settings (font) |
 | `nvim/` | `~/.config/nvim` | Neovim config (packer, telescope, lsp-zero, treesitter, prettier) |
 | `Brewfile` | | everything installed with Homebrew |
 | `install.sh` | | sets the whole thing up |
@@ -30,15 +31,17 @@ My terminal and Neovim setup for macOS (Apple Silicon).
    ~/dot-files/install.sh
    ```
 
-   This installs Homebrew, everything in the `Brewfile` (iTerm2, Victor Mono
+   This installs Homebrew, everything in the `Brewfile` (Ghostty, Victor Mono
    and Source Code Pro fonts, Neovim, ripgrep, fd, prettierd, pipx), oh-my-zsh
    with the `zsh-syntax-highlighting` and `zsh-autosuggestions` plugins, and
    nvm with the latest Node LTS. It then symlinks the config files into place.
    Any file it would overwrite is moved to `~/.dotfiles-backup/<timestamp>/`
    first. You can safely run it again.
 
-3. **Set up iTerm2.** Open iTerm2 and set the font to **VictorMono Nerd Font**
-   (`Cmd ,` → Profiles → Text). Use iTerm2 from now on.
+3. **Restart Ghostty.** Quit and reopen Ghostty so it loads the linked
+   config, which sets the font to VictorMono Nerd Font. After later edits to
+   `ghostty/config`, `Cmd+Shift+,` reloads it without restarting. If Ghostty
+   is already in `/Applications`, the `Brewfile` leaves it alone.
 
 4. **Install the Neovim plugins.** Run `nvim`. The first launch clones packer
    and shows some errors, which you can ignore. Quit, open `nvim` again and run

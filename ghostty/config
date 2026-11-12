@@ -1,0 +1,5 @@
+# Ghostty config. Reload with Cmd+Shift+, after editing.
+# All options: `ghostty +show-config --default --docs`
+# Themes: `ghostty +list-themes`, then set e.g. `theme = <name>`
+
+font-family = VictorMono Nerd Font

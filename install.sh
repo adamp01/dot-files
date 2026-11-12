@@ -69,13 +69,13 @@ link zsh/.zshrc        "$HOME/.zshrc"
 link zsh/.zprofile     "$HOME/.zprofile"
 link zsh/aliases.zsh   "$ZSH_CUSTOM/aliases.zsh"
 link git/ignore        "$HOME/.config/git/ignore"
+link ghostty/config    "$HOME/.config/ghostty/config"
 link nvim              "$HOME/.config/nvim"
 
 info "Done"
 cat <<'EOF'
 Next:
-  1. Open iTerm2 and set the font to VictorMono Nerd Font
-     (Cmd , -> Profiles -> Text).
+  1. Quit and reopen Ghostty so it picks up the new config.
   2. Run `nvim`, ignore the first-run errors, quit, then run `nvim` again
      and do :PackerSync.
   3. Set your git name and email (see README).

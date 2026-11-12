@@ -1,7 +1,8 @@
 tap "fsouza/prettierd"
 
 # Terminal
-cask "iterm2"
+# Skipped if Ghostty was installed outside Homebrew, so brew bundle doesn't fail
+cask "ghostty" unless File.exist?("/Applications/Ghostty.app")
 cask "font-victor-mono-nerd-font"
 cask "font-source-code-pro"
 
